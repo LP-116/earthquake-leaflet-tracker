@@ -1,26 +1,28 @@
 var myMap = L.map("map", {
-    center: [37.7749, -122.4194],
+    center: [36.0544, -112.1401],
     zoom: 5,
 });
 
-var queryUrl = "https://earthquake.usgs.gov/earthquakes/feed/v1.0/summary/all_week.geojson"
+var queryUrl = "https://earthquake.usgs.gov/earthquakes/feed/v1.0/summary/all_month.geojson"
 
 d3.json(queryUrl).then(function(data) {
     createFeatures(data.features);
   });
 
-function magnitudeColor(magnitude)  {
+function magnitudeColor(depth)  {
     switch (true) {
-    case (magnitude >= 5):
-        return "#ea2c2c";
-    case (magnitude > 4):
-        return "#ea822c";
-    case (magnitude > 3):
-        return "#ee9c00";
-    case (magnitude > 2):
-        return "#eecc00";
-    case (magnitude > 1):
-        return "#d4ee00";
+    case (depth >= 90):
+        return "#ff0000";
+    case (depth > 70):
+        return "#ff8000";
+    case (depth > 50):
+        return "#ffbf00";
+    case (depth > 30):
+        return "#ffff00";
+    case (depth > 10):
+        return "#bfff00";
+    case (depth > -10):
+        return "#00ff80";
     
     }
 
@@ -28,8 +30,11 @@ function magnitudeColor(magnitude)  {
 
 function styleDetail(features) {
     return {
-        fillColor: magnitudeColor(features.properties.mag),
-        fillOpacity: 0.7
+        weight: 0.4,
+        color: "black",
+        fillColor: magnitudeColor(features.geometry.coordinates[2]),
+        fillOpacity: 0.7,
+        radius: (features.properties.mag) *4
     }
 }
 
