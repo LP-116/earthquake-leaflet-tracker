@@ -52,7 +52,7 @@ function legendColor(d) {
 function createFeatures(earthquakeData) {
 
     function onEachFeature(features, layer) {
-        layer.bindPopup("<strong><u>" + (features.properties.place).split(" ").splice(-1)[0] + "</u></strong>" +
+        layer.bindPopup("<strong>" + (features.properties.place).split("of").pop(0) + "</strong>" +
           "<li>"+"Magnitude:" + features.properties.mag + "</li>" + "<li>" + "Depth:" + features.geometry.coordinates[2]+ "</li>" );
       }
     
