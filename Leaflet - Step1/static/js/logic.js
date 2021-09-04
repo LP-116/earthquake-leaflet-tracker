@@ -52,8 +52,8 @@ function legendColor(d) {
 function createFeatures(earthquakeData) {
 
     function onEachFeature(features, layer) {
-        layer.bindPopup("<h3>" + features.properties.place +
-          "</h3><hr><p>" + features.properties.mag + "</p>");
+        layer.bindPopup("<strong><u>" + (features.properties.place).split(" ").splice(-1)[0] + "</u></strong>" +
+          "<li>"+"Magnitude:" + features.properties.mag + "</li>" + "<li>" + "Depth:" + features.geometry.coordinates[2]+ "</li>" );
       }
     
     var earthquakes = L.geoJSON(earthquakeData, {
