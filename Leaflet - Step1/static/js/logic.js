@@ -22,7 +22,7 @@ function magnitudeColor(depth)  {
     case (depth > 10):
         return "#bfff00";
     case (depth > -10):
-        return "#00ff80";
+        return "#66ff8c";
     
     }
 
@@ -44,20 +44,10 @@ function legendColor(d) {
            d > 50  ? '#ffbf00' :
            d > 30  ? '#ffff00' :
            d > 10  ? '#bfff00':
-                     '#00ff80';
+                     '#66ff8c';
 
 }
 
-// function getColor(d) {
-//     return d > 1000 ? '#800026' :
-//            d > 500  ? '#BD0026' :
-//            d > 200  ? '#E31A1C' :
-//            d > 100  ? '#FC4E2A' :
-//            d > 50   ? '#FD8D3C' :
-//            d > 20   ? '#FEB24C' :
-//            d > 10   ? '#FED976' :
-//                       '#FFEDA0';
-// }
 
 function createFeatures(earthquakeData) {
 
