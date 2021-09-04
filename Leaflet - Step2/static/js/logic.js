@@ -1,3 +1,4 @@
+
 var earthquakeUrl = "https://earthquake.usgs.gov/earthquakes/feed/v1.0/summary/all_week.geojson"
 var tectonicPlatesUrl = "https://raw.githubusercontent.com/fraxen/tectonicplates/master/GeoJSON/PB2002_boundaries.json"
 
@@ -44,7 +45,6 @@ function legendColor(d) {
                      '#66ff8c';
 
 }
-
 
 function createFeatures(earthquakeData) {
 
@@ -146,7 +146,6 @@ function createMap(earthquakes) {
     L.control.layers(baseMaps, overlayMaps, {
         collapsed: false
 
-    
 
 }).addTo(myMap);
 }
