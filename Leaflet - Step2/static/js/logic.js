@@ -51,7 +51,7 @@ function createFeatures(earthquakeData) {
     // The popup box display's the place (reformatted from the original result so it appears over 2 lines), the earthquake magnitude and depth.
     function onEachFeature(features, layer) {
         layer.bindPopup("<strong>" + (features.properties.place).split("of")[0] + "of" +"</strong>" + "<br><strong>" + (features.properties.place).split("of").pop() + "</strong>" +
-          "<li>"+"Magnitude:" + features.properties.mag + "</li>" + "<li>" + "Depth:" + features.geometry.coordinates[2]+ "</li>" );
+          "<li>"+"Magnitude: " + features.properties.mag + "</li>" + "<li>" + "Depth: " + features.geometry.coordinates[2]+ "</li>" );
       }
 
     //  Creating a GeoJson layer for the earthquakeData object and adding the styles to the circles.
