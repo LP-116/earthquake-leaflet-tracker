@@ -33,7 +33,7 @@ e.g.
 __Before__
 <img src="https://user-images.githubusercontent.com/82348616/132117396-70ed99fc-f2d8-4605-ac16-76c0e552e57e.PNG" width="300">
 __After__
-<img src="https://user-images.githubusercontent.com/82348616/132117980-8adaad02-6f3b-4ffb-983d-f38e62892f37.PNG" width="200">
+<img src="https://user-images.githubusercontent.com/82348616/132117980-8adaad02-6f3b-4ffb-983d-f38e62892f37.PNG" width="300">
 
 The legend is created using L.control. The grades are defined in a list and a legendColor function is defined that returns the colors for the legend.
 The grades are iterated through by using a for loop, getting the matching color for each grade and then creating the text for each grade.
