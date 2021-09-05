@@ -48,12 +48,12 @@ function legendColor(d) {
 // This is run once for each feature in the features array.
 function createFeatures(earthquakeData) {
 
-    // The popup box display's the city and state (stripped from the place result in features), the earthquake magnitude and depth.
+    // The popup box display's the place (reformatted from the original result so it appears over 2 lines), the earthquake magnitude and depth.
     function onEachFeature(features, layer) {
-        layer.bindPopup("<strong>" + (features.properties.place).split("of").pop() + "</strong>" +
+        layer.bindPopup("<strong>" + (features.properties.place).split("of")[0] + "of" +"</strong>" + "<br><strong>" + (features.properties.place).split("of").pop() + "</strong>" +
           "<li>"+"Magnitude:" + features.properties.mag + "</li>" + "<li>" + "Depth:" + features.geometry.coordinates[2]+ "</li>" );
       }
-    
+
     //  Creating a GeoJson layer for the earthquakeData object and adding the styles to the circles.
     var earthquakes = L.geoJSON(earthquakeData, {
         pointToLayer: function(features, latlng) {
