@@ -17,7 +17,7 @@ accessToken: API_KEY
 
 
 // geoJson earthquake data url's
-var queryUrl = "https://earthquake.usgs.gov/earthquakes/feed/v1.0/summary/all_month.geojson"
+var queryUrl = "https://earthquake.usgs.gov/earthquakes/feed/v1.0/summary/all_week.geojson"
 
 
 // Perform a GET request to the query earthquake URL.
