@@ -37,8 +37,11 @@ __After__
 
 The legend is created using L.control. The grades are defined in a list and a legendColor function is defined that returns the colors for the legend.
 The grades are iterated through by using a for loop, getting the matching color for each grade and then creating the text for each grade.
+
 Note that this code needed to be added to the css file to get the legend to display properly:
+
 "div.info.legend.leaflet-control br { clear: both; }"
+
 Without this code, the colors did not appear in line with the text. 
 
 A grayscale layer and initial map are defined and the circle markers and legends are added to the map. 
