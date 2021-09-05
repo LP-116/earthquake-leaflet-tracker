@@ -29,9 +29,9 @@ Styling is applied to the circle markers by using the magnitude of the earthquak
 An onEachFeature function was created to generate the popup box when a marker is clicked.
 For a cleaner look in the popup box, the split and pop() methods were used on the "place" result to display the response of 2 different lines. 
 e.g.
-__Before__
-<img src="https://user-images.githubusercontent.com/82348616/132117396-70ed99fc-f2d8-4605-ac16-76c0e552e57e.PNG" width="200">
 
+__Before__
+<img src="https://user-images.githubusercontent.com/82348616/132117396-70ed99fc-f2d8-4605-ac16-76c0e552e57e.PNG" width="300">
 __After__
 <img src="https://user-images.githubusercontent.com/82348616/132117400-0e5a70fc-6a04-40c6-9a5a-d03ec846323a.PNG" width="200">
 
