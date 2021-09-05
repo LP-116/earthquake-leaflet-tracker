@@ -118,7 +118,7 @@ function createMap(earthquakes) {
 
 
     var myMap = L.map("map", {
-        center: [36.0544, -112.1401],
+        center: [40.7128, -74.0060],
         zoom: 3,
         layers:[lightlayer, satelliteLayer, outdoorsLayer, earthquakes, tectonicplates]
     });
