@@ -133,7 +133,7 @@ function createMap(earthquakes) {
           labels = [];
       
           for (var i = 0; i < grades.length; i++) {
-              div.innerHTML +=
+              div.innerHTML += 
                   '<div><i style="background:' + legendColor(grades[i] + 1) + '"></i> ' + 
                   grades[i] + (grades[i + 1] ? '&ndash;' + grades[i + 1] + '<br>' : '+' +'</div>');
       }
