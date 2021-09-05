@@ -27,13 +27,13 @@ The circle markers are created by creating a geoJson layer based on the response
 Styling is applied to the circle markers by using the magnitude of the earthquake for the radius of the circle (multiplied by 4 to give a decent size) and the color is determined by the depth of the earthquake. In order to apply the color, a separate function was defined. The function used a switch method to return a color based on the depth value.
 
 An onEachFeature function was created to generate the popup box when a marker is clicked.
-For a cleaner look in the popup box, the split and pop() methods were used on the "place" result to display the response of 2 different lines. 
+For a cleaner look in the popup box, the split and pop() methods were used on the "place" result to display the state and country. 
 e.g.
 
 __Before__
 <img src="https://user-images.githubusercontent.com/82348616/132117396-70ed99fc-f2d8-4605-ac16-76c0e552e57e.PNG" width="300">
 __After__
-<img src="https://user-images.githubusercontent.com/82348616/132117400-0e5a70fc-6a04-40c6-9a5a-d03ec846323a.PNG" width="200">
+<img src="https://user-images.githubusercontent.com/82348616/132117980-8adaad02-6f3b-4ffb-983d-f38e62892f37.PNG" width="200">
 
 The legend is created using L.control. The grades are defined in a list and a legendColor function is defined that returns the colors for the legend.
 The grades are iterated through by using a for loop, getting the matching color for each grade and then creating the text for each grade.
