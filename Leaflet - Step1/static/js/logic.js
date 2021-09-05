@@ -53,9 +53,9 @@ function magnitudeColor(depth)  {
 // This is run once for each feature in the features array.
 function createFeatures(earthquakeData) {
 
-    // The popup box display's the place (reformatted from the original result so it appears over 2 lines), the earthquake magnitude and depth.
+    // The popup box display's the place (reformatted from the original result so only city and state appears), the earthquake magnitude and depth.
     function onEachFeature(features, layer) {
-        layer.bindPopup("<strong>" + (features.properties.place).split("of")[0] + "of" +"</strong>" + "<br><strong>" + (features.properties.place).split("of").pop() + "</strong>" +
+        layer.bindPopup("<strong>" + (features.properties.place).split("of").pop() + "</strong>" +
           "<li>"+"Magnitude: " + features.properties.mag + "</li>" + "<li>" + "Depth: " + features.geometry.coordinates[2]+ "</li>" );
       }
    
