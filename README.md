@@ -1,5 +1,5 @@
 # Leaflet Challenge
-## Leaflet Homework - Visualizing Data with Leaflet
+## Visualizing Data with Leaflet
 ## To view the interactive map click [here](https://lp-116.github.io/leaflet-challenge/)
 
 ---
