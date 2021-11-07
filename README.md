@@ -1,6 +1,6 @@
 # Leaflet Challenge
 ## Visualizing Data with Leaflet
-## To view the interactive map click [here](https://lp-116.github.io/leaflet-challenge/)
+## To view the interactive map click [here](https://lp-116.github.io/earthquake-leaflet-tracker/)
 
 ---
 ### Task
